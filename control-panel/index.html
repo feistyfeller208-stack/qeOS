@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>qeOS Control Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔮 qeOS Control Panel</h1>
+      <div id="connection-status">Checking...</div>
+    </header>
+    
+    <div class="grid">
+      <div class="card">
+        <h2>Your Source</h2>
+        <div id="source-id">Loading...</div>
+        <button id="reset-source" class="secondary">Reset Source</button>
+      </div>
+      
+      <div class="card">
+        <h2>Field State</h2>
+        <div id="field-stats">
+          <div>Splits: <span id="split-count">0</span></div>
+          <div>Correlations: <span id="correlation-count">0</span></div>
+          <div>Last updated: <span id="last-updated">--</span></div>
+        </div>
+      </div>
+      
+      <div class="card full-width">
+        <h2>Active Rules</h2>
+        <div id="rules-list">Loading rules...</div>
+        <button id="add-rule">+ Add Rule</button>
+      </div>
+      
+      <div class="card full-width">
+        <h2>Discover Rules</h2>
+        <div id="discover-rules">
+          <p>Browse community rules from GitHub</p>
+          <a href="#" id="browse-rules">Browse Directory →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+  </html>
