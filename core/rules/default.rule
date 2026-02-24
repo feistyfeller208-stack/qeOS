@@ -1,0 +1,5 @@
+rule default-inverse {
+  type: inverse
+  strength: 0.5
+  description: "Default inverse correlation for testing"
+}
